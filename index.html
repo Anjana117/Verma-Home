@@ -1,0 +1,833 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assests/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        html,
+        #legacy {
+            position: relative;
+            height: 100%;
+        }
+
+        #legacy {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+
+        .swiper-slide {
+            text-align: center;
+            font-size: 18px;
+            background: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .swiper-slide img {
+            display: block;
+
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header section start -->
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-1">
+                    <img src="./assests/img/homeimg/logo.svg" class=" img-fluid" id="logo" alt="logo">
+                </div>
+                <div class="col-lg-7">
+                    <nav>
+                        <ul>
+                            <li><a href="javascript:void();" title="top builder in kerala">Home</a></li>
+                            <li class="menu"><a href="javascript:void();">Projects <i
+                                        class="fa-solid fa-angle-down"></i></a>
+                                <div class="submenu">
+                                    <div><a href="">Kochi</a></div>
+                                    <div><a href="">Trivandrum</a></div>
+                                    <div><a href="">Thrissur</a></div>
+
+                                </div>
+                            </li>
+                            <li class="menu"><a href="javascript:void();">About Us <i
+                                        class="fa-solid fa-angle-down"></i></a>
+                                <div class="submenu">
+                                    <div><a href="">Company Profile</a></div>
+                                    <div><a href="">Varma Touch</a></div>
+                                    <div> <a href="">Testimonials</a></div>
+
+                                </div>
+                            </li>
+                            <li><a href="javascript:void();">Gallery</a></li>
+                            <li><a href="javascript:void();">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-4">
+                    <ul class="d-flex">
+                        <li>
+                            <!-- Modal -->
+                            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+                                data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <h1 class=" mb-5 mx-auto" id="staticBackdropLabel"><img
+                                                src="./assests/img/homeimg/whatsapp-icon.svg" id="whatssap"
+                                                alt="whatsapp-icon"></h1>
+                                        <h3 class="text-center">Chat with Varma Homes?</h3>
+                                        <p class="text-center">Click OK to continue with WhatsApp!!</p>
+
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn bg-secondary"
+                                                data-bs-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn bg-danger">Okay</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Button trigger modal -->
+                            <DIV data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                                <img src="./assests/img/homeimg/whatsapp-icon.svg" class="img-fluid" id="whatssap"
+                                    alt="whatsapp-icon">
+                            </DIV>
+                        </li>
+                        <li class="menu"><a href=""> <img src="./assests/img/homeimg/phone-call-icon.svg"
+                                    class="img-fluid ms-3" id="call" alt="call"></a>
+                            <div class="submenu">
+                                <div><a href="">INDIA:+91 976543210</a></div>
+                                <div><a href="">UAE: +97 976543221</a></div>
+                            </div>
+                        </li>
+                        <li><button type="button" class="btn ms-3" id="btn1">Online Enquiry<span></span></button></li>
+                        <div class="toggler-btn" type="button" data-bs-toggle="offcanvas"
+                            data-bs-target="#offcanvasRight">
+                            <i class="fa-solid fa-bars fs-2 mt-4 ms-3"></i>
+                        </div>
+                        <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                            aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <ul>
+                                    <li><a href="index.html">Home </a></li>
+                                    <li class="menu">
+                                        <a class="ps-0" data-bs-toggle="collapse" href="#collapseExample1" role="button"
+                                            aria-expanded="false" aria-controls="collapseExample">
+                                            Projects
+                                        </a>
+                                        <div class="collapse" id="collapseExample1">
+                                            <ul class="sub_menu">
+                                                <div><i class="fa-solid fa-caret-up fs-2 "></i></div>
+                                                <li><a href="#">Kochi</a></li>
+                                                <li><a href="#">Trivandrum</a></li>
+                                                <li><a href="#">Thrissur</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li class="menu"><a class="ps-0 " data-bs-toggle="collapse" href="#collapseExample"
+                                            role="button" aria-expanded="false" aria-controls="collapseExample">
+                                            About Us
+                                        </a>
+                                        <div class="collapse" id="collapseExample">
+                                            <ul class="sub_menu">
+                                                <div><i class="fa-solid fa-caret-up fs-2 "></i></div>
+                                                <li><a href="#">Company Profile</a></li>
+                                                <li><a href="#">Varma Touch</a></li>
+                                                <li><a href="#">Testimonials</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                    <li><a href="#">Gallery</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header section end -->
+    <!-- Banner Section start -->
+    <section id="banner">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide-to="3"
+                    aria-label="Slide 4"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="1000">
+                    <img src="./assests/img/homeimg/slider-1.webp" class="d-block img-fluid" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="./assests/img/homeimg/slider-2.webp" class="d-block img-fluid" alt="">
+                </div>
+                <div class="carousel-item" data-bs-interval="1000">
+                    <img src="./assests/img/homeimg/slider-3.webp" class="d-block img-fluid" alt="">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <!-- Banner Section end -->
+    <!-- Legacy Section start -->
+    <section id="legacy">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto text-center">
+                    <h2 class="mt-5 mb-3 fw-bold ">Your Legacy Awaits You</h2>
+                    <p>Begin the journey towards your dream home with the top builder in Kerala.</p>
+                    <p>Crafting a legacy goes beyond the art of good design and architecture. It takes sincere
+                        commitment
+                        towards your customers and exquisite craftsmanship to stand out. With 16 premium projects
+                        spanning
+                        across Kerala, Varma Homes, one of the most renowned builders in Kerala, is here to present you
+                        a
+                        legacy. A legacy of fine living.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./assests/img/homeimg/s1.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-8 mx-auto">
+                                        <img src="./assests/img/homeimg/l1.png" class="img-fluid my-3" alt="">
+
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-muted mt-3 mb-2">2/3 BHK Compact Apartments</p>
+                                        <h6><i class="fa-solid fa-location-dot fs-6"></i> Near Swaraj Round, Thrissur
+                                        </h6>
+                                    </div>
+                                    <div style="height: 2px; width: 90%; background-color: rgb(215, 209, 209); "
+                                        class="mx-auto"></div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6 class="my-3 text-center ">K-RERA/PRJ/TVM/101/2022</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 mx-auto my-3">
+                                            <button type="button" class="btn1" id="btn2">View
+                                                Details<span></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./assests/img/homeimg/s2.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-8 mx-auto">
+                                        <img src="./assests/img/homeimg/l2.png" class="img-fluid my-3" alt="">
+
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-muted mt-3 mb-2">2/3 BHK Compact Apartments</p>
+                                        <h6><i class="fa-solid fa-location-dot fs-6"></i> Near Swaraj Round, Thrissur
+                                        </h6>
+                                    </div>
+                                    <div style="height: 2px; width: 90%; background-color: rgb(215, 209, 209); "
+                                        class="mx-auto"></div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6 class="my-3 text-center ">K-RERA/PRJ/TVM/101/2022</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 mx-auto my-3">
+                                            <button type="button" class="btn1" id="btn2">View
+                                                Details<span></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./assests/img/homeimg/s3.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-8 mx-auto">
+                                        <img src="./assests/img/homeimg/l3.png" class="img-fluid my-3" alt="">
+
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-muted mt-3 mb-2">2/3 BHK Compact Apartments</p>
+                                        <h6><i class="fa-solid fa-location-dot fs-6"></i> Near Swaraj Round, Thrissur
+                                        </h6>
+                                    </div>
+                                    <div style="height: 2px; width: 90%; background-color: rgb(215, 209, 209); "
+                                        class="mx-auto"></div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6 class="my-3 text-center ">K-RERA/PRJ/TVM/101/2022</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 mx-auto my-3">
+                                            <button type="button" class="btn1" id="btn2">View
+                                                Details<span></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./assests/img/homeimg/s4.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-8 mx-auto">
+                                        <img src="./assests/img/homeimg/l4.png" class="img-fluid my-3" alt="">
+
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-muted mt-3 mb-2">2/3 BHK Compact Apartments</p>
+                                        <h6><i class="fa-solid fa-location-dot fs-6"></i> Near Swaraj Round, Thrissur
+                                        </h6>
+                                    </div>
+                                    <div style="height: 2px; width: 90%; background-color: rgb(215, 209, 209); "
+                                        class="mx-auto"></div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6 class="my-3 text-center ">K-RERA/PRJ/TVM/101/2022</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 mx-auto my-3">
+                                            <button type="button" class="btn1" id="btn2">View
+                                                Details<span></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./assests/img/homeimg/s5.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-8 mx-auto">
+                                        <img src="./assests/img/homeimg/l5.png" class="img-fluid my-3" alt="">
+
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-muted mt-3 mb-2">2/3 BHK Compact Apartments</p>
+                                        <h6><i class="fa-solid fa-location-dot fs-6"></i> Near Swaraj Round, Thrissur
+                                        </h6>
+                                    </div>
+                                    <div style="height: 2px; width: 90%; background-color: rgb(215, 209, 209); "
+                                        class="mx-auto"></div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6 class="my-3 text-center ">K-RERA/PRJ/TVM/101/2022</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 mx-auto my-3">
+                                            <button type="button" class="btn1" id="btn2">View
+                                                Details<span></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <img src="./assests/img/homeimg/s6.jpg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="col-8 mx-auto">
+                                        <img src="./assests/img/homeimg/l6.png" class="img-fluid my-3" alt="">
+
+                                    </div>
+                                    <div class="col-12">
+                                        <p class="text-muted mt-3 mb-2">2/3 BHK Compact Apartments</p>
+                                        <h6><i class="fa-solid fa-location-dot fs-6"></i> Near Swaraj Round, Thrissur
+                                        </h6>
+                                    </div>
+                                    <div style="height: 2px; width: 90%; background-color: rgb(215, 209, 209); "
+                                        class="mx-auto"></div>
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <h6 class="my-3 text-center ">K-RERA/PRJ/TVM/101/2022</h6>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 mx-auto my-3">
+                                            <button type="button" class="btn1" id="btn2">View
+                                                Details<span></span></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Legacy Section end -->
+    <!-- builder Section end -->
+    <section id="builder">
+        <div class="container">
+            <div class="row ">
+                <div class="col-md-6">
+                    <h2>Most trusted builder in Kerala</h2>
+                    <p>We at Varma Homes, recognised amongst the most trusted builders and developers in Kerala, believe
+                        in leaving behind a legacy – A Legacy of Fine Living – for our customers who are investing in
+                        secure homes for generations to come.</p>
+                    <p>Over the years, as leading builders and developers in Kerala, we have maintained exceptional
+                        quality, high standards, and timeliness in project completion. From choosing the right vendors
+                        and partners who share equal responsibility in offering matchless service to providing exquisite
+                        after-sales service, Varma Homes, who are among the best builders in Kerala, have always
+                        prioritized customers and their needs.</p>
+                    <button type="button" class="btn2" id="btn3">Read More<span></span></button>
+                </div>
+                <div class="col-md-6">
+                    <div class="video">
+                        <div class="play-btn">
+                            <i class="fa-solid fa-play "></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- builder Section end -->
+    <!-- Handover section start -->
+    <section id="handover">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-6">
+                    <h4>Key Handover</h4>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./assests/img/homeimg/varma-key-hand-over1.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./assests/img/homeimg/varma-key-hand-over2.jpg" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./assests/img/homeimg/varma-key-hand-over3.jpg" class="d-block w-100" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4>What Do Our Customers Say?</h4>
+                    <div class="swiper mySwiperr">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="./assests/img/homeimg/builders-testimonial-1.webp" class="img-fluid" alt="">
+                                <p>Here is the feedback videos from our customer in Varma Bougain Heights.</p>
+                                <h5>Geetha Menon &amp; Kamala Menon </h5>
+                                <p>3E Varma Bougain Heights</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assests/img/homeimg/builders-testimonial-2.webp" class="img-fluid" alt="">
+                                <p>Here is the feedback videos from our customer in Varma Bougain Heights.</p>
+                                <h5>Geetha Menon &amp; Kamala Menon </h5>
+                                <p>3E Varma Bougain Heights</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assests/img/homeimg/builders-testimonial-3.webp" class="img-fluid" alt="">
+                                <p>Here is the feedback videos from our customer in Varma Bougain Heights.</p>
+                                <h5>Geetha Menon &amp; Kamala Menon </h5>
+                                <p>3E Varma Bougain Heights</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assests/img/homeimg/builders-testimonial-1.webp" class="img-fluid" alt="">
+                                <p>Here is the feedback videos from our customer in Varma Bougain Heights.</p>
+                                <h5>Geetha Menon &amp; Kamala Menon </h5>
+                                <p>3E Varma Bougain Heights</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="./assests/img/homeimg/builders-testimonial-2.webp" class="img-fluid" alt="">
+                                <p>Here is the feedback videos from our customer in Varma Bougain Heights.</p>
+                                <h5>Geetha Menon &amp; Kamala Menon </h5>
+                                <p>3E Varma Bougain Heights</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Handover section end -->
+    <!-- Pharmise Section start -->
+    <!-- <section id="pharmise">
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div id="line"></div>
+                <div id="img">
+                    <img src="./assests/img/homeimg/varma-promise.png" class="img-fluid" alt="">
+                </div>
+                <div id="box">
+                    <ul class="d-md-flex">
+                        <li>
+                            <img src="./assests/img/homeimg/on-time-delivery.png" class="img-fluid mb-3 mt-3"
+                                alt="">
+                            <h4 style="color: #ED1651;" class="text-center fs-4">On-time</h4>
+                            <p class="text-center fw-semibold">delivery</p>
+                        </li>
+                        <li>
+                            <img src="./assests/img/homeimg/locations.png" class="img-fluid mb-3 mt-3" alt="">
+                            <h4 style="color: #ED1651;" class="text-center fs-4">Prestigious</h4>
+                            <p class="text-center fw-semibold">Locations</p>
+                        </li>
+                        <li>
+                            <img src="./assests/img/homeimg/impeccable-quality.png" class="img-fluid mb-3 mt-3"
+                                alt="">
+                            <h4 style="color: #ED1651;" class="text-center fs-4">Impeccable</h4>
+                            <p class="text-center fw-semibold">Quality</p>
+                        </li>
+                        <li>
+                            <img src="./assests/img/homeimg/good-value-for-money.png" class="img-fluid mb-3 mt-3"
+                                alt="">
+                            <h4 style="color: #ED1651;" class="text-center fs-4">Value for</h4>
+                            <p class="text-center fw-semibold">Money</p>
+                        </li>
+                        <li>
+                            <img src="./assests/img/homeimg/after-sales-service.png" class="img-fluid mb-3 mt-3"
+                                alt="">
+                            <h4 style="color: #ED1651;" class="text-center fs-4">After Sales</h4>
+                            <p class="text-center fw-semibold">Care</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section> -->
+    <!-- Pharmise Section end -->
+    <!-- News section start -->
+    <section id="news">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mt-5">
+                    <h4>News</h4>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./assests/img/homeimg/news-1.jpg" class="d-block w-100" alt="">
+                                <div id="content">
+                                    <i class="fa-solid fa-calendar-days ps-3 pe-2"></i>NOV 15,2024
+                                    <H5 class="fw-bold ps-3 py-2"> Varma Symphony Bhoomi Pooja &amp; Stone Laying </H5>
+                                    <P class="ps-3"> Varma Symphony Bhoomi Pooja &amp; Stone Laying Ceremony on 29th
+                                        November
+                                        2023</P>
+                                    <button type="button" class="btn1 ms-3 mb-5" id="btn2">View
+                                        Details<span></span></button>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./assests/img/homeimg/news-2.jpg" class="d-block w-100" alt="">
+                                <div id="content">
+                                    <i class="fa-solid fa-calendar-days ps-3 pe-2"></i>MAR 25,2024
+                                    <H5 class="fw-bold ps-3 py-2"> Varma Symphony Bhoomi Pooja &amp; Stone Laying </H5>
+                                    <P class="ps-3"> Varma Symphony Bhoomi Pooja &amp; Stone Laying Ceremony on 29th
+                                        November
+                                        2023</P>
+                                    <button type="button" class="btn1 ms-3 mb-5" id="btn2">View
+                                        Details<span></span></button>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./assests/img/homeimg/news-3.jpg" class="d-block w-100" alt="">
+                                <div id="content">
+                                    <i class="fa-solid fa-calendar-days ps-3 pe-2"></i>OCT 10,2024
+                                    <H5 class="fw-bold ps-3 py-2"> Varma Symphony Bhoomi Pooja &amp; Stone Laying </H5>
+                                    <P class="ps-3"> Varma Symphony Bhoomi Pooja &amp; Stone Laying Ceremony on 29th
+                                        November
+                                        2023</P>
+                                    <button type="button" class="btn1 ms-3 mb-5" id="btn2">View
+                                        Details<span></span></button>
+                                </div>
+                            </div>
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./assests/img/homeimg/news-1.jpg" class="d-block w-100" alt="">
+                                <div id="content">
+                                    <i class="fa-solid fa-calendar-days ps-3 pe-2"></i>NOV 19,2024
+                                    <H5 class="fw-bold ps-3 py-2"> Varma Symphony Bhoomi Pooja &amp; Stone Laying </H5>
+                                    <P class="ps-3"> Varma Symphony Bhoomi Pooja &amp; Stone Laying Ceremony on 29th
+                                        November
+                                        2023</P>
+                                    <button type="button" class="btn1 ms-3 mb-5" id="btn2">View
+                                        Details<span></span></button>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./assests/img/homeimg/news-2.jpg" class="d-block w-100" alt="">
+                                <div id="content">
+                                    <i class="fa-solid fa-calendar-days ps-3 pe-2"></i>SEP 16,2024
+                                    <H5 class="fw-bold ps-3 py-2"> Varma Symphony Bhoomi Pooja &amp; Stone Laying </H5>
+                                    <P class="ps-3"> Varma Symphony Bhoomi Pooja &amp; Stone Laying Ceremony on 29th
+                                        November
+                                        2023</P>
+                                    <button type="button" class="btn1 ms-3 mb-5" id="btn2">View
+                                        Details<span></span></button>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-5">
+                    <h4>Blog</h4>
+                    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="./assests/img/homeimg/blog-1.jpg" class="d-block w-100 " alt="">
+                                <div id="content">
+                                    <i class="fa-solid fa-calendar-days ps-3 pe-2"></i>OCT 12,2024
+                                    <H5 class="fw-bold ps-3 py-2"> Varma Symphony Bhoomi Pooja &amp; Stone Laying </H5>
+                                    <P class="ps-3"> Varma Symphony Bhoomi Pooja &amp; Stone Laying Ceremony on 29th
+                                        November
+                                        2023</P>
+                                    <button type="button" class="btn1 ms-3 mb-5" id="btn2">View
+                                        Details<span></span></button>
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="./assests/img/homeimg/blog-2.jpg" class="d-block w-100" alt="">
+                                <div id="content">
+                                    <i class="fa-solid fa-calendar-days ps-3 pe-2"></i>MAR 13,2024
+                                    <H5 class="fw-bold ps-3 py-2"> Varma Symphony Bhoomi Pooja &amp; Stone Laying </H5>
+                                    <P class="ps-3"> Varma Symphony Bhoomi Pooja &amp; Stone Laying Ceremony on 29th
+                                        November
+                                        2023</P>
+                                    <button type="button" class="btn1 ms-3 mb-5" id="btn2">View
+                                        Details<span></span></button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- News section end -->
+      <!-- Build section start -->
+    <section id="build">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="./assests/img/homeimg/best-builders-in-kerala.webp" class="img-fluid" alt="">
+                </div>
+                <div class="col-md-6">
+                    <h5 class="mt-5">Best Builders in Kerala</h5>
+                    <p>The art of design is a craft only a few are blessed with. It takes passion, drive and immense
+                        courage. On a mission to Construct Happiness, Varma Homes are on the path towards pioneering
+                        exquisite lifestyle with our brand new flats and apartment projects across Kerala.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <h5 class="mt-5">Commercial Builders in Kerala</h5>
+                    <p>And we build work spaces too. To build an ambience fit for work, is quite a task. Unless you have
+                        a flair for it. Which is why, you should let the experts do it.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./assests/img/homeimg/commercial-builders-in-kerala.webp" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Build section end -->
+ <!-- Dream section start -->
+ <section id="dream">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <h4>Your Dream Home Is Only A Click Away</h4>
+                <button type="button" class="btn1 mx-auto" id="btn2">View
+                    Details<span></span></button>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- Dream section end -->
+ <!-- Logo section start -->
+ <section id="logo">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="./assests/img/homeimg/logo-white.svg" class="img-fluid" width="100%"  alt="">
+            </div>
+            <div class="col-md-9">
+                <p>Since its inception, Varma Homes has been established as the most trusted builder in Kerala.
+                    Beginning with residential projects in Kochi, we have carved a niche for ourselves in
+                    Thiruvananthapuram, Thrissur, Calicut, and many more , as a top builder in Kerala.</p>
+                <p>At Varma Homes, we have embraced our unique position as industry pioneers to transform the real
+                    estate landscape in Kerala, particularly in terms of project completion. We take pride in our
+                    splendid track record of completing all projects ahead of schedule. With us, your legacy is in
+                    safe hands.</p>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Logo section end -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/js/all.min.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 30,
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 2000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 3,
+                },
+            },
+        });
+        var swiper = new Swiper(".mySwiperr", {
+            slidesPerView: 2,
+            spaceBetween: 30,
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 2000,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1,
+                },
+                480: {
+                    slidesPerView: 1,
+                },
+                768: {
+                    slidesPerView: 2,
+                },
+                1200: {
+                    slidesPerView: 2,
+                },
+            },
+        });
+    </script>
+
+</body>
+
+</html>
